@@ -2,13 +2,13 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="bg- dark:bg-gray-900 ">
+    <footer className="bg- dark:bg-gray-800 mt-5">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
+          <div className="mt-0 md:mb-0 bg-orange-400 text-white w-60  px-8 py-5">
             <a href="https://flowbite.com/" className="flex items-center">
               
-              <span className="self-center text-2xl font-serif whitespace-nowrap dark:text-white">TOURS</span>
+              <span className="self-center text-2xl font-extrabold whitespace-nowrap ">TOURS</span>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -16,10 +16,10 @@ function Footer() {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">Website</a>
+                  <a href="https://flowbite.com/" className="hover:underline">Tour Status</a>
                 </li>
                 <li>
-                  <a href="https://tailwindcss.com/" className="hover:underline">Call us-098</a>
+                  <a href="https://tailwindcss.com/" className="hover:underline">Blogs</a>
                 </li>
               </ul>
             </div>
@@ -47,6 +47,8 @@ function Footer() {
             </div>
           </div>
         </div>
+        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <p className='text-white'>*Caution: Beware of Fake Promotions or Offers *Please do not believe or engage with any promotional emails, SMS or Web-link which ask you to click on a link and fill in your details. Tour bears no liability or responsibility whatsoever for any communication which is fraudulent or misleading in nature and not received from registered domain.</p>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" className="hover:underline">TOURS™</a>. All Rights Reserved.</span>

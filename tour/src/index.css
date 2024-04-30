@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#bgr{
-    background-image: url(/public/photos/banner.jpg);
-    height: 400px;
-   
+.slick-slide > div{
+    margin: 10px;
 }

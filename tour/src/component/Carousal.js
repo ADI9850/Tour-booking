@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
+
+
 const Carousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const images = [
-        { src: 'photos/image8.jpg', text: 'First Image' },
-        { src: 'photos/image9.jpg', text: 'Second Image' },
-        { src: 'photos/image11.jpg', text: 'Third Image' }
+        { src: 'photos/image8.jpg', text: 'Plan an unforgettable trip from your city' },
+        { src: 'photos/image9.jpg', text: 'Experience our special tours, uniquely created to suit all your preferences.' },
+        { src: 'photos/image11.jpg', text: 'Be part of an adventurous journey that brings you closer to nature.' }
     ];
 
     const goToSlide = (index) => {
@@ -31,14 +33,15 @@ const Carousel = () => {
     }, [currentSlide]); // Run effect whenever currentSlide changes
 
     return (
+        <>
         <div id="default-carousel" className="relative w-full " data-carousel="slide">
             {/* Carousel wrapper */}
-            <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div className="mx-auto relative h-56 w-11/12 overflow-hidden rounded-md md:h-96 mt-1">
                 {/* Carousel items */}
                 {images.map((image, index) => (
                     <div key={index} className={`duration-300 ease-in-out ${index === currentSlide ? 'block' : 'hidden'}`} data-carousel-item>
-                        <img src={image.src} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt={`Carousel Image`} />
-                        <div className="absolute top-5 left-0 right-0 text-center text-white font-bold">{image.text}</div>
+                        <img src={image.src} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 opacity-90 brightness-50" alt={`Carousel Image`} />
+                        <div className={` w-1/2 mx-auto absolute top-20  left-0 right-0 py-5 text-center font-bold text-3xl text-green-400 ${index === currentSlide ? 'bg-black bg-opacity-50' : 'bg-transparent'}`}>{image.text}</div>
                     </div>
                 ))}
             </div>
@@ -56,8 +59,11 @@ const Carousel = () => {
                 {/* Right arrow SVG */}
             </button>
         </div>
+        
+        </>
     );
 };
 
 export default Carousel;
+
 

@@ -2,7 +2,9 @@
 module.exports = {
   content: ["./src/component/*.js",],
   theme: {
-    extend: {},
+    extend: {
+    
+    },
   },
   plugins: [
     require('tailwindcss'),

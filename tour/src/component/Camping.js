@@ -35,17 +35,20 @@ const Camping = () => {
             <div key={index} className='flex justify-center'>
             <div className="w-1/2  mt-5">
                 {/* First Card */}
-                <div className="bg-white shadow-md rounded-lg overflow-hidden flex ">
+                <div className="bg-gray-800 shadow-md rounded-lg overflow-hidden flex text-white ">
                     {/* Image on the left */}
                     <div className="w-1/2  ">
                         <img src={idea.image} alt='im' />
                     </div>
                     {/* Content on the right */}
                     <div className="w-1/2 p-5 ml-10">
-                        <h2 className="text-xl font-semibold mb-2">{idea.title}</h2>
+                        <h2 className="text-3xl text-white font-extrabold mb-2">{idea.title}</h2>
                         <p>{idea.description}</p>
-                        <p className='text-2xl font-serif text-red-500 mt-5'>₹{idea.price}</p> 
-                        <Link to='/booking'> <button className='text-lg text-white font-bold bg-green-600 rounded-full w-20 mt-10'>Book now</button></Link>
+                        <div className='flex justify-around mt-10'>
+                        <p className=' w-36 h-10 rounded-full text-xl font-bold bg-white text-orange-400 '>₹{idea.price}</p> 
+                       
+                       <Link to='/booking'> <button className='w-36 h-10 text-lg text-white font-bold bg-orange-400 rounded-full '>Book now</button></Link>
+                       </div>
                     </div>
                 </div>
             </div>
