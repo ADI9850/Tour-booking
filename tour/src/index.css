@@ -5,3 +5,77 @@
 .slick-slide > div{
     margin: 10px;
 }
+
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-slideLeft {
+  animation: slideLeft 3s ease-in-out forwards;
+}
+
+.animate-slideRight {
+  animation: slideRight 0.5s ease-in-out forwards;
+}
+
+.animate-slideTop {
+  animation: slideTop 0.5s ease-in-out forwards;
+}
+
+.animate-slideBottom {
+  animation: slideBottom 3s ease-in-out forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 3s ease-in-out forwards;
+}
