@@ -13,7 +13,7 @@ const Services = () => {
 
     {
       title: "Accommodation",
-      image: "/photos/Accomodation1.png",
+      image: "/photos/accomodation1.png",
     },
     {
       title: "Transportation",
@@ -25,7 +25,7 @@ const Services = () => {
     },
     {
       title: "Tour Guide",
-      image: "/photos/Guide.png",
+      image: "/photos/guide.png",
     },
   ];
 
