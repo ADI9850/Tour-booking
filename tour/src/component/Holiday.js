@@ -50,10 +50,12 @@ const Holiday = () => {
                   </h2>
                 </div>
                 <p>{idea.description}</p>
-                <div className="flex justify-between mt-5">
-                  <p className="lg:w-24 sm:w-auto h-10 rounded-full  text-xl p-2 font-bold bg-white text-orange-400">{`₹${idea.price}`}</p>
+                <div className="flex flex-col sm:flex-row justify-around mt-5 ">
+                  <p className="lg:w-26 sm:w-auto h-10 mt-1 rounded-full text-xl p-2 font-bold bg-white text-orange-400">
+                    {`₹${idea.price}`}
+                  </p>
                   <Link to="/booking">
-                    <button className="lg:w-30 sm:w-auto h-10 p-2  text-lg text-white font-bold bg-orange-400 rounded-full">
+                    <button className="lg:w-26 sm:w-auto h-10 p-3 mt-1 text-lg text-white font-bold bg-orange-400 rounded-full">
                       Book now
                     </button>
                   </Link>
@@ -69,3 +71,4 @@ const Holiday = () => {
 };
 
 export default Holiday;
+

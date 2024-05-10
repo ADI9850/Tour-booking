@@ -25,7 +25,7 @@ const AdventureIdea = () => {
       title: "Spirutal Tour",
       description:
         "Bungee jumping is an activity that involves a person jumping from a great height while connected to a large elastic cord.",
-      image: "/photos/temple3.jpg",
+      image: "/photos/temple.jpg",
     },
     {
       title: "Camping",
